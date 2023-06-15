@@ -7,7 +7,7 @@ var snakeSize = 20;
 var snake = [
     { x: 100, y: 100 },
     { x: 80, y: 100 },
-    { x: 60, y: 100 },
+    { x: 60, y: 100 }
 ];
 var dx = snakeSize;
 var dy = 0;
@@ -103,10 +103,7 @@ function generateApple() {
 function draw() {
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-    // スネークの描画
-    snake.forEach(drawSnakePart);
-
-      // りんごの描画
+    // りんごの描画
     context.fillStyle = "red";
     context.fillRect(apple.x, apple.y, snakeSize, snakeSize);
 
@@ -116,10 +113,7 @@ function draw() {
     context.fillText("Score: " + score, 10, 20);
 
     // スネークの各パーツの描画
-    function drawSnakePart(snakePart) {
-        context.fillStyle = "green";
-        context.fillRect(snakePart.x, snakePart.y, snakeSize, snakeSize);
-    }
+    snake.forEach(drawSnakePart);
 }
 
 // ゲームループ
@@ -146,4 +140,4 @@ function moveSnake() {
 }
 
 // ゲームの開始
-gameLoop();
+gameLoop();   
