@@ -129,8 +129,7 @@ function gameLoop() {
         // ...
         return;
     }
-
-    setTimeout(gameLoop, 100);
+    setInterval(gameLoop, 200);
 }
 
 // スネークの移動
