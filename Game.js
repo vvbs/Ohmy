@@ -1,6 +1,7 @@
 // ゲームのキャンバスの設定
 var canvas = document.getElementById("gameCanvas");
 var context = canvas.getContext("2d");
+context.scale(2, 2); // キャンバスの拡大
 
 // スネークの初期位置とサイズ
 var snakeSize = 20;
