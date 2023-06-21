@@ -111,7 +111,9 @@ function draw() {
     // スコアの表示
     context.fillStyle = "black";
     context.font = "20px Arial";
-    context.fillText("Score: " + score, 10, 20);
+    context.fillStyle = "black";
+context.font = "20px Arial";
+context.fillText("Score: " + score, 10, 20);
 
     // スネークの各パーツの描画
     snake.forEach(drawSnakePart);
