@@ -1,4 +1,4 @@
-// ゲームのキャンバスの設定
+  // ゲームのキャンバスの設定
 var canvas = document.getElementById("gameCanvas");
 var context = canvas.getContext("2d");
 context.scale(2, 2); // キャンバスの拡大
@@ -142,4 +142,4 @@ function moveSnake() {
 }
 
 // ゲームの開始
-gameLoop();   
+gameLoop(); 
